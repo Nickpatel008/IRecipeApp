@@ -14,21 +14,22 @@ class TableViewVC: UIViewController {
     private let tableview = UITableView()
     
     private var todoState = [Int]()
-    public var name:  [String] = ["SandWitch","Special Learge Meals","Spicy Combo Burger","French Fries","Pizza","Paneer Mashala"]
-    public var img : [String] = ["sandwitch","Special Learge meals","Spicy Combo Burger","french_fries","pizza","paneer mashala"]
+    public var name:  [String] = ["Pizza","pasta","Spicy Burger","French Fries","Sandwich","Paneer Mashala"]
+    public var img : [String] = ["mypizza",
+                                 "mypasta","myburger","myfrenchfry","mysendwich","mypaneermasala"]
     
-    public var color : [UIColor] = [UIColor(red:0.92 ,green: 1 ,blue: 0 ,alpha: 0.6),
-                                    UIColor(red:0.92 ,green: 1 ,blue: 0 ,alpha: 0.49),
-                                    UIColor(red:0.98 ,green: 1 ,blue: 0 ,alpha: 0.39),
-                                    UIColor(red:0.92 ,green: 1 ,blue: 0 ,alpha: 0.31),
-                                    UIColor(red:0.92 ,green: 1 ,blue: 0 ,alpha: 0.29),
-                                    UIColor(red:0.92 ,green: 1 ,blue: 0 ,alpha: 0.25)]
+    public var color : [UIColor] = [UIColor(red:0.047 ,green: 0.133 ,blue: 0.204,alpha: 0.78),
+                                    UIColor(red:0.047 ,green: 0.133 ,blue: 0.204,alpha: 0.68),
+                                    UIColor(red:0.047 ,green: 0.133 ,blue: 0.204,alpha: 0.53),
+                                    UIColor(red:0.047 ,green: 0.133 ,blue: 0.204,alpha: 0.48),
+                                    UIColor(red:0.047 ,green: 0.133 ,blue: 0.204,alpha: 0.42),
+                                    UIColor(red:0.047 ,green: 0.133 ,blue: 0.204,alpha: 0.3)]
     
    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "My  Recipe Book"
+        title = "Cook for the Books"
         
         view.addSubview(tableview)
         tableview.layer.backgroundColor = UIColor.purple.cgColor
